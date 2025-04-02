@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Fira Code", monospace;
+}
+
+.main-color {
+  color: #f53003;
+}

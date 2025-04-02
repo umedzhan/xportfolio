@@ -1,0 +1,77 @@
+import Live from "./buttons/live";
+
+export const Projects = () => {
+  return (
+    <div>
+      <div className="flex justify-between gap-[209px]">
+        <div className="flex gap-4 items-center w-full">
+          <h1 className="text-[32px]">
+            <font className="main-color">#</font>projects
+          </h1>
+          <div className="bg-[#f53003] w-full h-[1px]" />
+        </div>
+        <div>
+          <div className="whitespace-nowrap text-[16px] font-medium">
+            View all {"~~>"}
+          </div>
+        </div>
+      </div>
+      <div className="mt-12" />
+      <div className="flex justify-between gap-4">
+        <div>
+          <img
+            className="border-1 border-[#ABB2BF]"
+            src="images/yellow-portfolio.png"
+          />
+          <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React</span>
+          </div>
+          <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
+            <h1>Yellow Portfolio</h1>
+            <p className="text-[#ABB2BF]">Template for portfolio</p>
+            <Live url="https://yellow-portfolio-eta.vercel.app/" />
+          </div>
+        </div>
+        <div>
+          <img
+            className="border-1 border-[#ABB2BF]"
+            src="images/yellow-portfolio.png"
+          />
+          <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React</span>
+          </div>
+          <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
+            <h1>Yellow Portfolio</h1>
+            <p className="text-[#ABB2BF]">Template for portfolio</p>
+            <Live url="https://yellow-portfolio-eta.vercel.app/" />
+          </div>
+        </div>
+        <div>
+          <img
+            className="border-1 border-[#ABB2BF]"
+            src="images/yellow-portfolio.png"
+          />
+          <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+            <span>React</span>
+          </div>
+          <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
+            <h1>Yellow Portfolio</h1>
+            <p className="text-[#ABB2BF]">Template for portfolio</p>
+            <Live url="https://yellow-portfolio-eta.vercel.app/" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
