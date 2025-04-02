@@ -9,3 +9,5 @@ export const Live = ({ url }) => {
     </a>
   );
 };
+
+export default Live;

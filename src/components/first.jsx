@@ -35,3 +35,5 @@ export const First = () => {
     </div>
   );
 };
+
+export default First;
