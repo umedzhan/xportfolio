@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <div className="flex justify-between pt-[32px] pb-[8px]">
-      <Link className="flex gap-2 items-center">
+      <Link to="/" className="flex gap-2 items-center">
         <img src="icons/logo.png" />
         <span className="text-[16px] font-bold">Karayev Umedjon</span>
       </Link>

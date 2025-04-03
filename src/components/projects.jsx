@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Live from "./buttons/live";
 
 export const Projects = () => {
@@ -5,15 +6,18 @@ export const Projects = () => {
     <div>
       <div className="flex justify-between gap-[209px]">
         <div className="flex gap-4 items-center w-full">
-          <h1 className="text-[32px]">
+          <h1 id="work" className="text-[32px]">
             <font className="main-color">#</font>projects
           </h1>
           <div className="bg-[#f53003] w-full h-[1px]" />
         </div>
         <div>
-          <div className="whitespace-nowrap text-[16px] font-medium">
+          <Link
+            to="/projects"
+            className="whitespace-nowrap text-[16px] font-medium"
+          >
             View all {"~~>"}
-          </div>
+          </Link>
         </div>
       </div>
       <div className="mt-12" />
