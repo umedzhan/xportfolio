@@ -1,3 +1,5 @@
+import { SmallProjectsBlock } from "./elements/block-project";
+
 export const SmallProjects = () => {
   return (
     <div className="flex flex-col gap-12">
@@ -5,13 +7,13 @@ export const SmallProjects = () => {
         <font className="main-color">#</font>small-projects
       </div>
       <div className="flex gap-4">
-        <BlockProject />
-        <BlockProject />
-        <BlockProject />
+        <SmallProjectsBlock />
+        <SmallProjectsBlock />
+        <SmallProjectsBlock />
       </div>
       <div className="flex gap-4">
-        <BlockProject />
-        <BlockProject />
+        <SmallProjectsBlock />
+        <SmallProjectsBlock />
       </div>
     </div>
   );

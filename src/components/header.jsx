@@ -8,14 +8,14 @@ export const Header = () => {
         <span className="text-[16px] font-bold">Karayev Umedjon</span>
       </Link>
       <div className="flex gap-[32px]">
-        <a href="#home">
+        <Link to={"/"} href="#home">
           <span className="main-color">#</span>
           home
-        </a>
-        <a href="#work">
+        </Link>
+        <Link to={"/projects"} href="#work">
           <span className="main-color">#</span>
           work
-        </a>
+        </Link>
         <a href="#about-me">
           <span className="main-color">#</span>
           about-me

@@ -3,6 +3,7 @@ import Media from "../components/media";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import CompleteApps from "../components/complete-apps";
+import SmallProjects from "../components/small-projects";
 
 export const Projects = () => {
   return (
@@ -21,6 +22,10 @@ export const Projects = () => {
         <div className="mt-[68px]" />
         <CompleteApps />
         <div className="mt-[81px]" />
+        <div className="flex flex-col gap-12">
+          <SmallProjects />
+        </div>
+        <div className="mt-[185px]" />
         <Footer />
       </div>
     </div>
