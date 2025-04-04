@@ -16,14 +16,14 @@ export const Header = () => {
           <span className="main-color">#</span>
           work
         </Link>
-        <a href="#about-me">
+        <Link to={"/about-me"} href="#about-me">
           <span className="main-color">#</span>
           about-me
-        </a>
-        <a href="#contacts">
+        </Link>
+        <Link to={"/contacts"} href="#contacts">
           <span className="main-color">#</span>
           contacts
-        </a>
+        </Link>
       </div>
     </div>
   );

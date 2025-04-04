@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const First = () => {
   return (
     <div className="flex justify-between">
@@ -10,9 +12,11 @@ export const First = () => {
           He crafts responsive websites and web applications that are fast,
           accessible and user-friendly.
         </p>
-        <button className="border-1 border-[#f53003] mt-[24px] px-4 py-2">
-          Contact me!!
-        </button>
+        <Link to="/contacts">
+          <button className="border-1 border-[#f53003] mt-[24px] px-4 py-2 cursor-pointer">
+            Contact me!!
+          </button>
+        </Link>
       </div>
       <div className="relative">
         <img

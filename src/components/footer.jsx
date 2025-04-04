@@ -17,15 +17,27 @@ export const Footer = () => {
           <div className="flex flex-col gap-[12px]">
             <h1 className="font-medium text-[24px]">Media</h1>
             <div className="flex gap-2 h-[32px] items-center">
-              <div className="w-[32px]">
+              <a
+                href="https://github.com/umedzhan"
+                target="_blank"
+                className="w-[32px]"
+              >
                 <img className="" src="icons/github.svg" />
-              </div>
-              <div className="w-[32px]">
+              </a>
+              <a
+                href="https://t.me/umezhon"
+                target="_blank"
+                className="w-[32px]"
+              >
                 <img src="icons/telegram.svg" />
-              </div>
-              <div className="w-[32px]">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/umedjon-karayev-925009320"
+                target="_blank"
+                className="w-[32px]"
+              >
                 <img src="icons/linkedin.svg" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
