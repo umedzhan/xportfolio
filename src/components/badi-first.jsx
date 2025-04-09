@@ -14,7 +14,7 @@ export const BadiFirst = () => {
           />
         </div>
         <div className="flex justify-end">
-          <div className="p-4 border-1">- Dr. Who</div>
+          <div className="p-4 border-1 border-t-0">- Dr. Who</div>
         </div>
       </div>
     </div>

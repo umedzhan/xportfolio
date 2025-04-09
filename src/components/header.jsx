@@ -29,4 +29,16 @@ export const Header = () => {
   );
 };
 
-export default Header;
+export const MobileHeader = () => {
+  return (
+    <div>
+      <div className="h-12"></div>
+      <div className="fixed top-0 [width:calc(100%-16px)]">
+        <div className="flex justify-between">
+          <div>Karayev Umedjon</div>
+          <div className="h-4 w-4 bg-red-600 rounded-full" />
+        </div>
+      </div>
+    </div>
+  );
+};

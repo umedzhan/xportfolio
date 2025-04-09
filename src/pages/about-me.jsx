@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../components/header";
+import { Header } from "../components/header";
 import { Skills2 } from "../components/skills";
 import { AboutMe, AboutMe2 } from "../components/about-me";
 import { Contacts } from "../components/contacts";
