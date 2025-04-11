@@ -32,10 +32,10 @@ export const Home = () => {
           <Footer />
         </div>
       </div>
-      <div className="hidden md:hidden text-[#fff] bg-[#21201c]">
-        <div className="px-[8px]">
+      <div className="md:hidden text-[#fff] bg-[#21201c]">
+        <div className="px-4">
           <MobileHeader />
-          <div className="h-[62px]" />
+          <div className="h-[40px]" />
           <First />
           <div className="h-[112px]" />
           <BadiFirst />

@@ -17,41 +17,81 @@ const BlockSkills = ({ What, Skill }) => {
 
 export const Skills = () => {
   return (
-    <div>
-      <div className="flex justify-between gap-[209px]">
-        <div className="flex gap-4 items-center w-full">
-          <h1 className="text-[32px]">
-            <font className="main-color">#</font>skills
-          </h1>
-          <div className="bg-[#f53003] w-full h-[1px]" />
-        </div>
-      </div>
-      <div className="flex gap-[59px] justify-between">
-        <img className="ml-[32px] w-[349px]" src="images/skills.svg" />
-        <div className="flex gap-4 mt-[31px]">
-          <div>
-            <BlockSkills
-              What={"Languages"}
-              Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
-            />
-          </div>
-          <div className="flex flex-col gap-4">
-            <BlockSkills
-              What="Databases"
-              Skill={["MySQL", "PostgreSQL", "SQLite"]}
-            />
-            <BlockSkills What="Other" Skill={["HTML", "CSS"]} />
-          </div>
-          <div className="flex flex-col gap-4">
-            <BlockSkills
-              What={"Tools"}
-              Skill={["Git", "GitHub", "Linux", "VSCode"]}
-            />
-            <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+    <>
+      <div className="hidden md:block">
+        <div className="flex justify-between gap-[209px]">
+          <div className="flex gap-4 items-center w-full">
+            <h1 className="text-[32px]">
+              <font className="main-color">#</font>skills
+            </h1>
+            <div className="bg-[#f53003] w-full h-[1px]" />
           </div>
         </div>
+        <div className="flex gap-[59px] justify-between">
+          <img className="ml-[32px] w-[349px]" src="images/skills.svg" />
+          <div className="flex gap-4 mt-[31px]">
+            <div>
+              <BlockSkills
+                What={"Languages"}
+                Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
+              />
+            </div>
+            <div className="flex flex-col gap-4">
+              <BlockSkills
+                What="Databases"
+                Skill={["MySQL", "PostgreSQL", "SQLite"]}
+              />
+              <BlockSkills What="Other" Skill={["HTML", "CSS"]} />
+            </div>
+            <div className="flex flex-col gap-4">
+              <BlockSkills
+                What={"Tools"}
+                Skill={["Git", "GitHub", "Linux", "VSCode"]}
+              />
+              <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+      {/* For Mobile */}
+
+      <div className="md:hidden">
+        <div className="flex justify-between">
+          <div className="flex gap-4 items-center w-full">
+            <h1 className="text-[32px]">
+              <font className="main-color">#</font>skills
+            </h1>
+            <div className="bg-[#f53003] w-full h-[1px]" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-[59px] justify-between">
+          <img className="max-w-full w-full" src="images/skills.svg" />
+          <div className="flex gap-4 mt-[31px] flex-col">
+            <div>
+              <BlockSkills
+                What={"Languages"}
+                Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
+              />
+            </div>
+            <div className="flex flex-col gap-4">
+              <BlockSkills
+                What="Databases"
+                Skill={["MySQL", "PostgreSQL", "SQLite"]}
+              />
+              <BlockSkills What="Other" Skill={["HTML", "CSS"]} />
+            </div>
+            <div className="flex flex-col gap-4">
+              <BlockSkills
+                What={"Tools"}
+                Skill={["Git", "GitHub", "Linux", "VSCode"]}
+              />
+              <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
