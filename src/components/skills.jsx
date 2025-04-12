@@ -97,32 +97,64 @@ export const Skills = () => {
 
 export const Skills2 = () => {
   return (
-    <div className="flex flex-col gap-12">
-      <div>
-        <div className="flex gap-4 items-center w-full">
-          <h1 className="text-[32px] font-medium">
-            <font className="main-color">#</font>skills
-          </h1>
+    <>
+      <div className="hidden md:flex flex-col gap-12">
+        <div>
+          <div className="flex gap-4 items-center w-full">
+            <h1 className="text-[32px] font-medium">
+              <font className="main-color">#</font>skills
+            </h1>
+          </div>
+        </div>
+        <div className="flex gap-4 justify-between">
+          <BlockSkills
+            What={"Languages"}
+            Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
+          />
+
+          <BlockSkills
+            What="Databases"
+            Skill={["MySQL", "PostgreSQL", "SQLite"]}
+          />
+          <BlockSkills What="Other" Skill={["HTML", "CSS", "Tailwind"]} />
+
+          <BlockSkills
+            What={"Tools"}
+            Skill={["Git", "GitHub", "Linux", "VSCode"]}
+          />
+          <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
         </div>
       </div>
-      <div className="flex gap-4 justify-between">
-        <BlockSkills
-          What={"Languages"}
-          Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
-        />
 
-        <BlockSkills
-          What="Databases"
-          Skill={["MySQL", "PostgreSQL", "SQLite"]}
-        />
-        <BlockSkills What="Other" Skill={["HTML", "CSS", "Tailwind"]} />
+      {/* For Mobile */}
 
-        <BlockSkills
-          What={"Tools"}
-          Skill={["Git", "GitHub", "Linux", "VSCode"]}
-        />
-        <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+      <div className="md:hidden flex flex-col gap-12">
+        <div>
+          <div className="flex gap-4 items-center w-full">
+            <h1 className="text-[32px] font-medium">
+              <font className="main-color">#</font>skills
+            </h1>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 justify-between">
+          <BlockSkills
+            What={"Languages"}
+            Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
+          />
+
+          <BlockSkills
+            What="Databases"
+            Skill={["MySQL", "PostgreSQL", "SQLite"]}
+          />
+          <BlockSkills What="Other" Skill={["HTML", "CSS", "Tailwind"]} />
+
+          <BlockSkills
+            What={"Tools"}
+            Skill={["Git", "GitHub", "Linux", "VSCode"]}
+          />
+          <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };

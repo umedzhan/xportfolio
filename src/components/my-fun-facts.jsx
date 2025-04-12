@@ -8,7 +8,7 @@ export const MyFunFacts = () => {
       <h1 className="text-[32px] font-medium">
         <font className="main-color">#</font>my-fun-facts
       </h1>
-      <div className="flex justify-between gap-[156px]">
+      <div className="flex flex-col justify-between gap-[156px]">
         <div className="flex flex-wrap gap-3">
           <BlockFacts Text="I like winter more than summer" />
           <BlockFacts Text="I do'nt like to read books" />
@@ -20,7 +20,6 @@ export const MyFunFacts = () => {
           <BlockFacts Text="I like to play football" />
           <BlockFacts Text="I like to play volleyball" />
         </div>
-        <img src="icons/Logo.svg" />
       </div>
     </div>
   );

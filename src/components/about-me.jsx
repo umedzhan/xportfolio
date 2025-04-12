@@ -94,7 +94,7 @@ export const AboutMe2 = () => {
       <div className="flex justify-between gap-[209px]">
         <div className="flex gap-4 items-center w-full"></div>
       </div>
-      <div className="flex gap-[59px] justify-between">
+      <div className="flex flex-col gap-[59px] justify-between">
         <div className="flex flex-col gap-5 mt-[23px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
           <span>Hello, I’m Umedjon!</span>
           <span>
@@ -112,7 +112,7 @@ export const AboutMe2 = () => {
         </div>
         <div className="flex flex-col items-center">
           <div className="relative">
-            <img className="h-[508px]" src="images/iam2.png" />
+            <img src="images/iam2.png" />
             <img className="absolute top-[59px]" src="icons/Dots.svg" />
             <img
               className="absolute bottom-[172px] right-[16px]"
