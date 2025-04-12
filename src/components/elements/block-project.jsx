@@ -35,7 +35,7 @@ export const BlockProject = () => {
 
 export const SmallProjectsBlock = () => {
   return (
-    <div className="flex flex-col w-[30%]">
+    <div className="flex flex-col">
       <div className="border-1 border-[#ABB2BF] p-2 text-[#ABB2BF]">
         TelegramPHP PHP SQL
       </div>

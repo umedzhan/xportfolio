@@ -50,7 +50,7 @@ export const Projects = () => {
           <div className="flex flex-col gap-12">
             <SmallProjects />
           </div>
-          <div className="mt-[185px]" />
+          <div className="mt-[50px]" />
           <Footer />
         </div>
       </div>
