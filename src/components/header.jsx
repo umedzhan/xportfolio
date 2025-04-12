@@ -56,65 +56,68 @@ export const MobileHeader = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between pt-4 pb-2 text-white">
-        <h1 className="flex items-center gap-2">
-          <img src="icons/logo.png" width={16} /> Karayev Umedjon
-        </h1>
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? (
-            <img src="icons/x.svg" size={28} />
-          ) : (
-            <img src="icons/menu.svg" size={28} />
-          )}
-        </button>
-      </div>
-
-      {isOpen && (
-        <div
-          className="fixed top-15 left-0 w-full h-full bg-[#21201c] text-white flex flex-col items-center justify-center gap-6 text-2xl z-50 transition-all duration-700"
-          onClick={handleCloseMenu}
-        >
-          <Link
-            to="/"
-            className={
-              location.pathname !== "/" ? "text-red-500" : "text=[#ABB2BF]"
-            }
-          >
-            #home
-          </Link>
-          <Link
-            to="/projects"
-            className={
-              location.pathname !== "/projects"
-                ? "text-red-500"
-                : "text=[#ABB2BF]"
-            }
-          >
-            #works
-          </Link>
-          <Link
-            to="/about-me"
-            className={
-              location.pathname !== "/about-me"
-                ? "text-red-500"
-                : "text=[#ABB2BF]"
-            }
-          >
-            #about-me
-          </Link>
-          <Link
-            to="/contacts"
-            className={
-              location.pathname !== "/contacts"
-                ? "text-red-500"
-                : "text=[#ABB2BF]"
-            }
-          >
-            #contacts
-          </Link>
-          <script>document.body.style.overflow = 'hidden';</script>
+      <div className="fixed [width:calc(100%-32px)] bg-[#21201c] z-50">
+        <div className="flex items-center justify-between pt-4 pb-2 text-white">
+          <h1 className="flex items-center gap-2">
+            <img src="icons/logo.png" width={16} /> Karayev Umedjon
+          </h1>
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? (
+              <img src="icons/x.svg" size={28} />
+            ) : (
+              <img src="icons/menu.svg" size={28} />
+            )}
+          </button>
         </div>
-      )}
+
+        {isOpen && (
+          <div
+            className="fixed top-[48px] left-0 w-full h-full bg-[#21201c] text-white flex flex-col items-center justify-center gap-6 text-2xl z-50 transition-all duration-700"
+            onClick={handleCloseMenu}
+          >
+            <Link
+              to="/"
+              className={
+                location.pathname !== "/" ? "text-red-500" : "text=[#ABB2BF]"
+              }
+            >
+              #home
+            </Link>
+            <Link
+              to="/projects"
+              className={
+                location.pathname !== "/projects"
+                  ? "text-red-500"
+                  : "text=[#ABB2BF]"
+              }
+            >
+              #works
+            </Link>
+            <Link
+              to="/about-me"
+              className={
+                location.pathname !== "/about-me"
+                  ? "text-red-500"
+                  : "text=[#ABB2BF]"
+              }
+            >
+              #about-me
+            </Link>
+            <Link
+              to="/contacts"
+              className={
+                location.pathname !== "/contacts"
+                  ? "text-red-500"
+                  : "text=[#ABB2BF]"
+              }
+            >
+              #contacts
+            </Link>
+            <script>document.body.style.overflow = 'hidden';</script>
+          </div>
+        )}
+      </div>
+      <div className="h-[48px] bg-[#21201c]" />
     </>
   );
 };
