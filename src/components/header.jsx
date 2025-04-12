@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { X, Menu } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export const Header = () => {
@@ -40,6 +40,20 @@ export const MobileHeader = () => {
       setIsOpen(false);
     }
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Komponent unmount bo‘lganda scrollni tiklaymiz
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div className="flex items-center justify-between pt-4 pb-2 text-white">
@@ -98,6 +112,7 @@ export const MobileHeader = () => {
           >
             #contacts
           </Link>
+          <script>document.body.style.overflow = 'hidden';</script>
         </div>
       )}
     </>
