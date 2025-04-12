@@ -53,7 +53,7 @@ export const Footer = () => {
       {/* For Mobile */}
 
       <div className="md:hidden">
-        <div className="h-[1px] bg-[#ABB2BF] mx-[-171px]" />
+        <div className="h-[1px] bg-[#ABB2BF] mx-[-16px]" />
         <div className="pt-4">
           <div className="flex flex-col gap-8 justify-between">
             <div className="flex flex-col gap-3">
