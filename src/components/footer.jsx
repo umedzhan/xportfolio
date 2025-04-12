@@ -18,7 +18,7 @@ export const Footer = () => {
               <div>Back-end and front-end developer</div>
             </div>
             <div className="flex flex-col gap-[12px]">
-              <h1 className="font-medium text-[24px]"> Media</h1>
+              <h1 className="font-medium text-[24px]">Media</h1>
               <div className="flex gap-2 h-[32px] items-center">
                 <a
                   href="https://github.com/umedzhan"
