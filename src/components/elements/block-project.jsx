@@ -13,7 +13,7 @@ const Button = ({ Text, Url }) => {
 
 export const BlockProject = () => {
   return (
-    <div className="w-[30%]">
+    <div className="">
       <img
         className="border-1 border-[#ABB2BF]"
         src="images/yellow-portfolio.png"

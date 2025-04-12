@@ -30,9 +30,11 @@ export const Projects = () => {
           <Footer />
         </div>
       </div>
+
       {/* For Mobile */}
+
       <div className="md:hidden text-[#fff] bg-[#21201c]">
-        <div className="mx-[8px]">
+        <div className="mx-[16px]">
           <MobileHeader />
           <div className="mt-[53px]">
             <div className="flex flex-col gap-[14px]">

@@ -23,12 +23,10 @@ export const CompleteApps = () => {
         <div className="text-[32px] text-sm font-bold">
           <font className="main-color">#</font>complete-apps
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4">
           <BlockProject />
           <BlockProject />
           <BlockProject />
-        </div>
-        <div className="flex gap-4">
           <BlockProject />
           <BlockProject />
         </div>
