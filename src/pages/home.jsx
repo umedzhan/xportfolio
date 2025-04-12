@@ -32,7 +32,7 @@ export const Home = () => {
           <Footer />
         </div>
       </div>
-      <div className="md:hidden text-[#fff] bg-[#21201c]">
+      <div className="md:hidden text-[#fff] bg-[#21201c] overflow-y-scroll">
         <div className="px-4">
           <MobileHeader />
           <div className="h-[40px]" />
