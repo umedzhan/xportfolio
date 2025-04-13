@@ -14,7 +14,7 @@ export const First = () => {
             accessible and user-friendly.
           </p>
           <Link to="/contacts">
-            <button className="border-1 border-[#f53003] mt-[24px] px-4 py-2 cursor-pointer">
+            <button className="hover:bg-[#483234] transition-all border-1 border-[#f53003] mt-[24px] px-4 py-2 cursor-pointer">
               Contact me!!
             </button>
           </Link>
@@ -55,7 +55,7 @@ export const First = () => {
             accessible and user-friendly.
           </p>
           <Link to="/contacts">
-            <button className="border-1 border-[#f53003] mt-[24px] px-4 py-2 cursor-pointer">
+            <button className="hover:bg-[#483234] transition-all border-1 border-[#f53003] mt-[24px] px-4 py-2 cursor-pointer">
               Contact me!!
             </button>
           </Link>
