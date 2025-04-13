@@ -11,19 +11,39 @@ export const Header = () => {
         <span className="text-[16px] font-bold">Karayev Umedjon</span>
       </Link>
       <div className="flex gap-[32px]">
-        <Link to={"/"} href="#home">
+        <Link
+          to={"/"}
+          className={
+            location.pathname === "/" ? "text-white" : "text-[#ABB2BF]"
+          }
+        >
           <span className="main-color">#</span>
           home
         </Link>
-        <Link to={"/projects"} href="#work">
+        <Link
+          to={"/projects"}
+          className={
+            location.pathname === "/projects" ? "text-white" : "text-[#ABB2BF]"
+          }
+        >
           <span className="main-color">#</span>
           work
         </Link>
-        <Link to={"/about-me"} href="#about-me">
+        <Link
+          to={"/about-me"}
+          className={
+            location.pathname === "/about-me" ? "text-white" : "text-[#ABB2BF]"
+          }
+        >
           <span className="main-color">#</span>
           about-me
         </Link>
-        <Link to={"/contacts"} href="#contacts">
+        <Link
+          to={"/contacts"}
+          className={
+            location.pathname === "/contacts" ? "text-white" : "text-[#ABB2BF]"
+          }
+        >
           <span className="main-color">#</span>
           contacts
         </Link>
