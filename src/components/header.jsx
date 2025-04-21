@@ -92,7 +92,7 @@ export const MobileHeader = () => {
 
         {isOpen && (
           <div
-            className="fixed top-[48px] left-0 w-full h-full bg-[#21201c] text-white flex flex-col items-center justify-center gap-6 text-2xl z-50 transition-all duration-700"
+            className="fixed top-[48px] pb-[48px] left-0 w-full h-full bg-[#21201c] text-white flex flex-col items-center justify-center gap-6 text-2xl z-10 transition-all duration-700"
             onClick={handleCloseMenu}
           >
             <Link
