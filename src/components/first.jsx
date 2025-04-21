@@ -73,7 +73,7 @@ export const First = () => {
             className="absolute left-0 top-[84px] z-0"
             src="icons/Logo.svg"
           />
-          <div className="flex items-center gap-2 border-1 ml-[31px] mr-[36px] text-[16px] p-2 font-medium">
+          <div className="flex items-center gap-2 border-1 text-[16px] p-2 font-medium">
             <div className="bg-color bg-[#f53003] w-4 h-4 min-w-4 max-w-4" />
             <span>
               Currently working on{" "}
