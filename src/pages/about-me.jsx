@@ -6,8 +6,10 @@ import { Contacts } from "../components/contacts";
 import { Footer } from "../components/footer";
 import { Media } from "../components/media";
 import { MyFunFacts } from "../components/my-fun-facts";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block text-[#fff] bg-[#21201c]">
@@ -19,7 +21,7 @@ export const Home = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>about-me
               </div>
-              <div>Who I am</div>
+              <div>{t("who_i_am")}</div>
             </div>
           </div>
           <div className="h-[62px]" />
@@ -43,7 +45,7 @@ export const Home = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>about-me
               </div>
-              <div>Who I am</div>
+              <div>{t("who_i_am")}</div>
             </div>
           </div>
           <div className="h-[62px]" />

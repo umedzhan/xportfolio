@@ -1,32 +1,26 @@
+import { t } from "i18next";
 import ReadMore from "./buttons/buttons";
+import { useTranslation } from "react-i18next";
 
 export const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block">
         <div className="flex justify-between gap-[209px]">
           <div className="flex gap-4 items-center w-full">
             <h1 id="about-me" className="text-[32px] whitespace-nowrap">
-              <font className="main-color">#</font>about-me
+              <font className="main-color">#</font>
+              {t("about-me2")}
             </h1>
             <div className="bg-[#f53003] w-full h-[1px]" />
           </div>
         </div>
         <div className="flex gap-[59px] justify-between">
           <div className="flex flex-col gap-5 mt-[23px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-            <span>Hello, I’m Umedjon!</span>
-            <span>
-              I’m a backend developer and IT enthusiast based in Termez,
-              Uzbekistan. I specialize in building functional and efficient web
-              applications using Laravel, PHP, MySQL, and SQLite. Additionally,
-              I work with Vite and React to create modern and interactive
-              front-end experiences.
-            </span>
-            <span>
-              Creating innovative and practical solutions has been my passion
-              for years. I continuously explore new technologies and frameworks
-              to improve my skills and develop high-quality digital products.
-            </span>
+            <span>{t("hello_im")}</span>
+            <span>{t("about-me-intro")}</span>
+            <span>{t("about-me-intro-2")}</span>
             <ReadMore />
           </div>
           <div className="flex flex-col items-center">
@@ -49,26 +43,17 @@ export const AboutMe = () => {
         <div className="flex justify-between gap-[209px]">
           <div className="flex gap-4 items-center w-full">
             <h1 id="about-me" className="text-[32px] whitespace-nowrap">
-              <font className="main-color">#</font>about-me
+              <font className="main-color">#</font>
+              {t("about-me2")}
             </h1>
             <div className="bg-[#f53003] w-full h-[1px]" />
           </div>
         </div>
         <div className="flex flex-col gap-8 justify-between">
           <div className="flex flex-col gap-5 mt-[23px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-            <span>Hello, I’m Umedjon!</span>
-            <span>
-              I’m a backend developer and IT enthusiast based in Termez,
-              Uzbekistan. I specialize in building functional and efficient web
-              applications using Laravel, PHP, MySQL, and SQLite. Additionally,
-              I work with Vite and React to create modern and interactive
-              front-end experiences.
-            </span>
-            <span>
-              Creating innovative and practical solutions has been my passion
-              for years. I continuously explore new technologies and frameworks
-              to improve my skills and develop high-quality digital products.
-            </span>
+            <span>{t("hello_im")}</span>
+            <span>{t("about-me-intro")}</span>
+            <span>{t("about-me-intro-2")}</span>
             <ReadMore />
           </div>
           <div className="flex flex-col items-center">
@@ -97,19 +82,9 @@ export const AboutMe2 = () => {
         </div>
         <div className="flex gap-[59px] justify-between">
           <div className="flex flex-col gap-5 mt-[23px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-            <span>Hello, I’m Umedjon!</span>
-            <span>
-              I’m a backend developer and IT enthusiast based in Termez,
-              Uzbekistan. I specialize in building functional and efficient web
-              applications using Laravel, PHP, MySQL, and SQLite. Additionally,
-              I work with Vite and React to create modern and interactive
-              front-end experiences.
-            </span>
-            <span>
-              Creating innovative and practical solutions has been my passion
-              for years. I continuously explore new technologies and frameworks
-              to improve my skills and develop high-quality digital products.
-            </span>
+            <span>{t("hello_im")}</span>
+            <span>{t("about-me-intro")}</span>
+            <span>{t("about-me-intro-2")}</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="relative">
@@ -133,19 +108,9 @@ export const AboutMe2 = () => {
         </div>
         <div className="flex flex-col gap-[59px] justify-between">
           <div className="flex flex-col gap-5 mt-[23px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-            <span>Hello, I’m Umedjon!</span>
-            <span>
-              I’m a backend developer and IT enthusiast based in Termez,
-              Uzbekistan. I specialize in building functional and efficient web
-              applications using Laravel, PHP, MySQL, and SQLite. Additionally,
-              I work with Vite and React to create modern and interactive
-              front-end experiences.
-            </span>
-            <span>
-              Creating innovative and practical solutions has been my passion
-              for years. I continuously explore new technologies and frameworks
-              to improve my skills and develop high-quality digital products.
-            </span>
+            <span>{t("hello_im")}</span>
+            <span>{t("about-me-intro")}</span>
+            <span>{t("about-me-intro-2")}</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="relative">

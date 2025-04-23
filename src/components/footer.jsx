@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block">
@@ -9,16 +12,16 @@ export const Footer = () => {
               <div className="flex gap-3">
                 <div className="flex gap-[9px] items-center">
                   <img className="w-4 h-4" src="icons/logo.png" />
-                  <span className="font-medium">Karayev</span>
+                  <span className="font-medium">{t("last_name")}</span>
                 </div>
                 <span className="text-[#ABB2BF]">
                   karayev.umedjon@gmail.com
                 </span>
               </div>
-              <div>Back-end and front-end developer</div>
+              <div>{t("backend_and_frontend_developer")}</div>
             </div>
             <div className="flex flex-col gap-[12px]">
-              <h1 className="font-medium text-[24px]">Media</h1>
+              <h1 className="font-medium text-[24px]">{t("media")}</h1>
               <div className="flex gap-2 h-[32px] items-center">
                 <a
                   href="https://github.com/umedzhan"
@@ -46,7 +49,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-12 flex justify-center text-[#ABB2BF] pb-4">
-          © Copyright 2025. Made by Karayev
+          {t("copyright")}
         </div>
       </div>
 
@@ -60,7 +63,7 @@ export const Footer = () => {
               <div className="flex flex-col gap-3">
                 <div className="flex gap-[9px] items-center">
                   <img className="w-4 h-4" src="icons/logo.png" />
-                  <span className="font-medium">Karayev</span>
+                  <span className="font-medium">{t("last_name")}</span>
                 </div>
                 <a
                   href="mailto:karayev.umedjon@gmail.com"
@@ -69,10 +72,10 @@ export const Footer = () => {
                   karayev.umedjon@gmail.com
                 </a>
               </div>
-              <div>Back-end and front-end developer</div>
+              <div>{t("backend_and_frontend_developer")}</div>
             </div>
             <div className="flex flex-col gap-[12px]">
-              <h1 className="font-medium text-[24px]">Media</h1>
+              <h1 className="font-medium text-[24px]">{t("media")}</h1>
               <div className="flex gap-2 h-[32px] items-center">
                 <a
                   href="https://github.com/umedzhan"
@@ -100,7 +103,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-12 flex justify-center text-[#ABB2BF] pb-4 text-center">
-          © Copyright 2025. Made by Karayev
+          {t("copyright")}
         </div>
       </div>
     </>

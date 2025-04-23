@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { Header, MobileHeader } from "../components/header";
 import { Footer } from "../components/footer";
 import { Media } from "../components/media";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block text-[#fff] bg-[#21201c] h-lvh">
@@ -15,7 +17,7 @@ export const Home = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>contacts
               </div>
-              <div>Who I am</div>
+              <div>{t("who_i_am")}</div>
             </div>
           </div>
 
@@ -23,11 +25,10 @@ export const Home = () => {
 
           <div className="flex gap-[59px] justify-between">
             <div className="flex flex-col gap-5 mt-[45px] [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-              I’m interested in freelance opportunities. However, if you have
-              other request or question, don’t hesitate to contact me
+              {t("contacts_text")}
             </div>
             <div className="flex flex-col gap-4 mt-[100px] p-4 border-1 border-[#ABB2BF]">
-              <h1 className="font-semibold text-[16px]">Message me here</h1>
+              <h1 className="font-semibold text-[16px]">{t("message_me")}</h1>
               <div className="flex flex-col gap-2 text-[#ABB2BF]">
                 <a
                   href="https://github.com/umedzhan"
@@ -90,7 +91,7 @@ export const Home = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>contacts
               </div>
-              <div>Who I am</div>
+              <div>{t("who_i_am")}</div>
             </div>
           </div>
 
@@ -98,8 +99,7 @@ export const Home = () => {
 
           <div className="flex flex-col gap-[40px] justify-between">
             <div className="flex flex-col gap-5 [line-height:26px] text-[16px] max-w-[600px] text-[#ABB2BF]">
-              I’m interested in freelance opportunities. However, if you have
-              other request or question, don’t hesitate to contact me
+              {t("contacts_text")}
             </div>
             <div className="flex flex-col gap-4 p-4 border-1 border-[#ABB2BF]">
               <h1 className="font-semibold text-[16px]">Message me here</h1>

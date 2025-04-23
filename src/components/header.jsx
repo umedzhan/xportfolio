@@ -2,15 +2,26 @@ import { Link } from "react-router-dom";
 import { X, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
+import SelectLang from "./elements/select-language";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    const selectledLang = e.target.value;
+    i18n.changeLanguage(selectledLang);
+    localStorage.setItem("i18nextLng", selectledLang);
+  };
+
   return (
     <div className="flex justify-between pt-[32px] pb-[8px]">
       <Link to="/" className="flex gap-2 items-center">
         <img src="icons/logo.png" />
-        <span className="text-[16px] font-bold">Karayev Umedjon</span>
+        <span className="text-[16px] font-bold">{t("Karayev Umedjon")}</span>
       </Link>
-      <div className="flex gap-[32px]">
+      <div className="flex gap-[32px] items-center">
         <Link
           to={"/"}
           className={
@@ -18,7 +29,7 @@ export const Header = () => {
           }
         >
           <span className="main-color">#</span>
-          home
+          {t("home")}
         </Link>
         <Link
           to={"/projects"}
@@ -27,7 +38,7 @@ export const Header = () => {
           }
         >
           <span className="main-color">#</span>
-          work
+          {t("work")}
         </Link>
         <Link
           to={"/about-me"}
@@ -36,7 +47,7 @@ export const Header = () => {
           }
         >
           <span className="main-color">#</span>
-          about-me
+          {t("about-me")}
         </Link>
         <Link
           to={"/contacts"}
@@ -45,14 +56,23 @@ export const Header = () => {
           }
         >
           <span className="main-color">#</span>
-          contacts
+          {t("contacts")}
         </Link>
+        <SelectLang Value={i18n.language} onChange={changeLanguage} />
       </div>
     </div>
   );
 };
 
 export const MobileHeader = () => {
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    const selectledLang = e.target.value;
+    i18n.changeLanguage(selectledLang);
+    localStorage.setItem("i18nextLng", selectledLang);
+  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseMenu = (e) => {
@@ -79,7 +99,8 @@ export const MobileHeader = () => {
       <div className="fixed [width:calc(100%-32px)] bg-[#21201c] z-50">
         <div className="flex items-center justify-between pt-4 pb-2 text-white">
           <h1 className="flex items-center gap-2">
-            <img src="icons/logo.png" width={16} /> Karayev Umedjon
+            <img src="icons/logo.png" width={16} />
+            {t("Karayev Umedjon")}
           </h1>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
@@ -101,7 +122,7 @@ export const MobileHeader = () => {
                 location.pathname !== "/" ? "text-red-500" : "text=[#ABB2BF]"
               }
             >
-              #home
+              #{t("home")}
             </Link>
             <Link
               to="/projects"
@@ -111,7 +132,7 @@ export const MobileHeader = () => {
                   : "text=[#ABB2BF]"
               }
             >
-              #works
+              #{t("work")}
             </Link>
             <Link
               to="/about-me"
@@ -121,7 +142,7 @@ export const MobileHeader = () => {
                   : "text=[#ABB2BF]"
               }
             >
-              #about-me
+              #{t("about-me")}
             </Link>
             <Link
               to="/contacts"
@@ -131,9 +152,9 @@ export const MobileHeader = () => {
                   : "text=[#ABB2BF]"
               }
             >
-              #contacts
+              #{t("contacts")}
             </Link>
-            <script>document.body.style.overflow = 'hidden';</script>
+            <SelectLang Value={i18n.language} onChange={changeLanguage} />
           </div>
         )}
       </div>

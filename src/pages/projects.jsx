@@ -4,8 +4,10 @@ import { Header, MobileHeader } from "../components/header";
 import Footer from "../components/footer";
 import CompleteApps from "../components/complete-apps";
 import SmallProjects from "../components/small-projects";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block text-[#fff] bg-[#21201c]">
@@ -17,7 +19,7 @@ export const Projects = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>projects
               </div>
-              <div>List of my projects</div>
+              <div>{t("list-of-my-projects")}</div>
             </div>
           </div>
           <div className="mt-[68px]" />
@@ -41,7 +43,7 @@ export const Projects = () => {
               <div className="font-semibold text-[32px]">
                 <font className="main-color">/</font>projects
               </div>
-              <div>List of my projects</div>
+              <div>{t("list-of-my-projects")}</div>
             </div>
           </div>
           <div className="mt-[68px]" />

@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import Live from "./buttons/live";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:block">
         <div className="flex justify-between gap-[209px]">
           <div className="flex gap-4 items-center w-full">
             <h1 id="work" className="text-[32px]">
-              <font className="main-color">#</font>projects
+              <font className="main-color">#</font>
+              {t("projects")}
             </h1>
             <div className="bg-[#f53003] w-full h-[1px]" />
           </div>
@@ -17,7 +20,7 @@ export const Projects = () => {
               to="/projects"
               className="whitespace-nowrap text-[16px] font-medium"
             >
-              View all {"~~>"}
+              {t("view_all")} {"~~>"}
             </Link>
           </div>
         </div>
@@ -83,7 +86,8 @@ export const Projects = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center w-full">
             <h1 id="work" className="text-[32px] text-sm">
-              <font className="main-color">#</font>projects
+              <font className="main-color">#</font>
+              {t("projects")}
             </h1>
           </div>
           <div>
