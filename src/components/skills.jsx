@@ -145,27 +145,28 @@ export const Skills2 = () => {
         <div>
           <div className="flex gap-4 items-center w-full">
             <h1 className="text-[32px] font-medium">
-              <font className="main-color">#</font>skills
+              <font className="main-color">#</font>
+              {t("skills")}
             </h1>
           </div>
         </div>
         <div className="flex flex-col gap-4 justify-between">
           <BlockSkills
-            What={"Languages"}
+            What={t("languages")}
             Skill={["PHP", "JavaScript", "Python", "C++", "Python", "C#"]}
           />
 
           <BlockSkills
-            What="Databases"
+            What={t("databases")}
             Skill={["MySQL", "PostgreSQL", "SQLite"]}
           />
-          <BlockSkills What="Other" Skill={["HTML", "CSS", "Tailwind"]} />
+          <BlockSkills What={t("other")} Skill={["HTML", "CSS", "Tailwind"]} />
 
           <BlockSkills
-            What={"Tools"}
+            What={t("tools")}
             Skill={["Git", "GitHub", "Linux", "VSCode"]}
           />
-          <BlockSkills What="Frameworks" Skill={["React", "Laravel"]} />
+          <BlockSkills What={t("frameworks")} Skill={["React", "Laravel"]} />
         </div>
       </div>
     </>

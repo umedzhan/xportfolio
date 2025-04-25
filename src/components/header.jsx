@@ -98,10 +98,10 @@ export const MobileHeader = () => {
     <>
       <div className="fixed [width:calc(100%-32px)] bg-[#21201c] z-50">
         <div className="flex items-center justify-between pt-4 pb-2 text-white">
-          <h1 className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img src="icons/logo.png" width={16} />
             {t("Karayev Umedjon")}
-          </h1>
+          </Link>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <img src="icons/x.svg" size={28} />
