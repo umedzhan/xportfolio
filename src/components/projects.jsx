@@ -4,13 +4,41 @@ import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
   const { t } = useTranslation();
+
+  const projects = [
+    {
+      id: "zakhme",
+      img: "images/zakhme_logo.png",
+      tech: ["PHP", "MySQL"],
+      title: "Zakhme Bot",
+      desc: "Music Telegram Bot",
+      url: "https://t.me/zakhme_bot",
+    },
+    {
+      id: "yellow-1",
+      img: "images/yellow-portfolio.png",
+      tech: ["HTML", "CSS", "JS", "React"],
+      title: "Yellow Portfolio",
+      desc: "Template for portfolio",
+      url: "https://yellow-portfolio-eta.vercel.app/",
+    },
+    {
+      id: "yellow-2",
+      img: "images/yellow-portfolio.png",
+      tech: ["HTML", "CSS", "JS", "React"],
+      title: "Yellow Portfolio",
+      desc: "Template for portfolio",
+      url: "https://yellow-portfolio-eta.vercel.app/",
+    },
+  ];
+
   return (
     <>
       <div className="hidden md:block">
         <div className="flex justify-between gap-[209px]">
           <div className="flex gap-4 items-center w-full">
             <h1 id="work" className="text-[32px]">
-              <font className="main-color">#</font>
+              <span className="main-color">#</span>
               {t("projects")}
             </h1>
             <div className="bg-[#f53003] w-full h-[1px]" />
@@ -24,67 +52,37 @@ export const Projects = () => {
             </Link>
           </div>
         </div>
+
         <div className="mt-12" />
         <div className="flex justify-between gap-4">
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/zakhme_logo.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>PHP</span>
-              <span>MySQL</span>
+          {projects.map((p) => (
+            <div key={p.id}>
+              <img
+                className="border border-[#ABB2BF]"
+                src={p.img}
+                alt={p.title}
+              />
+              <div className="border border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
+                {p.tech.map((tch) => (
+                  <span key={tch}>{tch}</span>
+                ))}
+              </div>
+              <div className="border border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
+                <h1>{p.title}</h1>
+                <p className="text-[#ABB2BF]">{p.desc}</p>
+                <Live url={p.url} />
+              </div>
             </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Zakhme Bot</h1>
-              <p className="text-[#ABB2BF]">Music Telegram Bot</p>
-              <Live url="https://t.me/zakhme_bot" />
-            </div>
-          </div>
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/yellow-portfolio.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-              <span>React</span>
-            </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Yellow Portfolio</h1>
-              <p className="text-[#ABB2BF]">Template for portfolio</p>
-              <Live url="https://yellow-portfolio-eta.vercel.app/" />
-            </div>
-          </div>
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/yellow-portfolio.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-              <span>React</span>
-            </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Yellow Portfolio</h1>
-              <p className="text-[#ABB2BF]">Template for portfolio</p>
-              <Live url="https://yellow-portfolio-eta.vercel.app/" />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
       {/* For Mobile */}
-
       <div className="md:hidden">
         <div className="flex justify-between items-center">
           <div className="flex items-center w-full">
             <h1 id="work" className="text-[32px] text-sm">
-              <font className="main-color">#</font>
+              <span className="main-color">#</span>
               {t("projects")}
             </h1>
           </div>
@@ -97,57 +95,28 @@ export const Projects = () => {
             </Link>
           </div>
         </div>
+
         <div className="mt-12" />
         <div className="flex flex-col justify-between gap-4">
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/zakhme_logo.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>PHP</span>
-              <span>MySQL</span>
+          {projects.map((p) => (
+            <div key={`${p.id}-mobile`}>
+              <img
+                className="border border-[#ABB2BF]"
+                src={p.img}
+                alt={p.title}
+              />
+              <div className="border border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
+                {p.tech.map((tch) => (
+                  <span key={tch}>{tch}</span>
+                ))}
+              </div>
+              <div className="border border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
+                <h1>{p.title}</h1>
+                <p className="text-[#ABB2BF]">{p.desc}</p>
+                <Live url={p.url} />
+              </div>
             </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Zakhme Bot</h1>
-              <p className="text-[#ABB2BF]">Music Telegram Bot</p>
-              <Live url="https://zakhme_bot.t.me" />
-            </div>
-          </div>
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/yellow-portfolio.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-              <span>React</span>
-            </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Yellow Portfolio</h1>
-              <p className="text-[#ABB2BF]">Template for portfolio</p>
-              <Live url="https://yellow-portfolio-eta.vercel.app/" />
-            </div>
-          </div>
-          <div>
-            <img
-              className="border-1 border-[#ABB2BF]"
-              src="images/yellow-portfolio.png"
-            />
-            <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-              <span>React</span>
-            </div>
-            <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Yellow Portfolio</h1>
-              <p className="text-[#ABB2BF]">Template for portfolio</p>
-              <Live url="https://yellow-portfolio-eta.vercel.app/" />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>
