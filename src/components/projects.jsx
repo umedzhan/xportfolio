@@ -29,18 +29,16 @@ export const Projects = () => {
           <div>
             <img
               className="border-1 border-[#ABB2BF]"
-              src="images/yellow-portfolio.png"
+              src="images/zakhme_logo.png"
             />
             <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-              <span>React</span>
+              <span>PHP</span>
+              <span>MySQL</span>
             </div>
             <div className="border-1 border-t-0 border-[#ABB2BF] p-4 flex flex-col gap-4">
-              <h1>Yellow Portfolio</h1>
-              <p className="text-[#ABB2BF]">Template for portfolio</p>
-              <Live url="https://yellow-portfolio-eta.vercel.app/" />
+              <h1>Zakhme Bot</h1>
+              <p className="text-[#ABB2BF]">Music Bot</p>
+              <Live url="https://t.me/zakhme_bot" />
             </div>
           </div>
           <div>
