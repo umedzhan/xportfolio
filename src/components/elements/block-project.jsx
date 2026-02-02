@@ -18,6 +18,7 @@ export const BlockProject = () => {
         <img
           className="border-1 border-[#ABB2BF]"
           src="images/yellow-portfolio.png"
+          alt="project screenshot"
         />
         <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
           <span>HTML</span>
@@ -38,6 +39,7 @@ export const BlockProject = () => {
         <img
           className="border-1 border-[#ABB2BF]"
           src="images/yellow-portfolio.png"
+          alt="project screenshot"
         />
         <div className="border-1 border-t-0 border-[#ABB2BF] flex gap-2 text-[16px] text-[#ABB2BF] p-2">
           <span>HTML</span>

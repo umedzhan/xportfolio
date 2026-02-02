@@ -7,7 +7,7 @@ export const SelectLang = ({ Value, onChange }) => {
     >
       <option value="en">EN</option>
       <option value="tj">TJ</option>
-      {/* <option value="uz">UZ</option> */}
+      <option value="uz">UZ</option>
     </select>
   );
 };

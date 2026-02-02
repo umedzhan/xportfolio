@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-export const Contacts = () => {
+export const ContactSection = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -26,7 +26,7 @@ export const Contacts = () => {
                 className="flex gap-[5px] items-center text-[16px]"
               >
                 <div className="flex justify-center items-center w-[32px] h-[32px] p-[1px]">
-                  <img src="icons/github.svg" />
+                  <img src="icons/github.svg" alt="github" />
                 </div>
                 umedzhan
               </a>
@@ -35,7 +35,7 @@ export const Contacts = () => {
                 className="flex gap-[5px] items-center text-[16px]"
               >
                 <div className="flex justify-center items-center w-[32px] h-[32px] px-[3px] py-[7px]">
-                  <img src="icons/email.svg" />
+                  <img src="icons/email.svg" alt="email" />
                 </div>
                 karayev.umedjon@gmail.com
               </a>
@@ -68,7 +68,7 @@ export const Contacts = () => {
                 className="flex gap-[5px] items-center text-[16px]"
               >
                 <div className="flex justify-center items-center w-[32px] h-[32px] p-[1px]">
-                  <img src="icons/github.svg" />
+                  <img src="icons/github.svg" alt="github" />
                 </div>
                 umedzhan
               </a>
@@ -77,7 +77,7 @@ export const Contacts = () => {
                 className="flex gap-[5px] items-center text-[16px]"
               >
                 <div className="flex justify-center items-center w-[32px] h-[32px] px-[3px] py-[7px]">
-                  <img src="icons/email.svg" />
+                  <img src="icons/email.svg" alt="email" />
                 </div>
                 ka*****n@gmail.com
               </a>
@@ -89,4 +89,4 @@ export const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default ContactSection;

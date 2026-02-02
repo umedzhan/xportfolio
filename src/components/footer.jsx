@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className="flex flex-col gap-3">
               <div className="flex gap-3">
                 <div className="flex gap-[9px] items-center">
-                  <img className="w-4 h-4" src="icons/logo.png" />
+                  <img className="w-4 h-4" src="icons/logo.png" alt="logo" />
                   <span className="font-medium">{t("last_name")}</span>
                 </div>
                 <span className="text-[#ABB2BF]">
@@ -28,21 +28,21 @@ export const Footer = () => {
                   target="_blank"
                   className="w-[32px]"
                 >
-                  <img className="" src="icons/github.svg" />
+                  <img className="" src="icons/github.svg" alt="github" />
                 </a>
                 <a
                   href="https://t.me/umezhon"
                   target="_blank"
                   className="w-[32px]"
                 >
-                  <img src="icons/telegram.svg" />
+                  <img src="icons/telegram.svg" alt="telegram" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/umedjon-karayev-925009320"
                   target="_blank"
                   className="w-[32px]"
                 >
-                  <img src="icons/linkedin.svg" />
+                  <img src="icons/linkedin.svg" alt="linkedin" />
                 </a>
               </div>
             </div>

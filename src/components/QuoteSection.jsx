@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-export const BadiFirst = () => {
+export const QuoteSection = () => {
   const { t } = useTranslation();
   return (
     <div className="flex justify-center">
@@ -24,4 +24,4 @@ export const BadiFirst = () => {
   );
 };
 
-export default BadiFirst;
+export default QuoteSection;

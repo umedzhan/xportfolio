@@ -1,60 +1,27 @@
-import { Link } from "react-router-dom";
-import { Header, MobileHeader } from "../components/header";
-import First from "../components/first";
-import BadiFirst from "../components/badi-first";
-import Projects from "../components/projects";
+import { Layout } from "../components/Layout";
+import { Hero } from "../components/Hero";
+import { QuoteSection } from "../components/QuoteSection";
+import ProjectSection from "../components/ProjectSection";
 import { Skills } from "../components/skills";
-import { AboutMe } from "../components/about-me";
-import { Contacts } from "../components/contacts";
-import { Footer } from "../components/footer";
-import { Media } from "../components/media";
+import { AboutSection } from "../components/AboutSection";
+import { ContactSection } from "../components/ContactSection";
 
 export const Home = () => {
   return (
-    <>
-      <div className="hidden md:block text-[#fff] bg-[#21201c]">
-        <div className="mx-[171px]">
-          <Media />
-          <Header />
-          <div className="h-[62px]" />
-          <First />
-          <div className="h-[112px]" />
-          <BadiFirst />
-          <div className="h-[74px]" />
-          <Projects />
-          <div className="h-[106px]" />
-          <Skills />
-          <div className="h-[112px]" />
-          <AboutMe />
-          <div className="h-[112px]" />
-          <Contacts />
-          <div className="h-[145px]" />
-          <Footer />
-        </div>
-      </div>
-
-      {/* For Mobile */}
-
-      <div className="md:hidden text-[#fff] bg-[#21201c] max-h-full">
-        <div className="px-4">
-          <MobileHeader />
-          <div className="h-[40px]" />
-          <First />
-          <div className="h-[112px]" />
-          <BadiFirst />
-          <div className="h-[74px]" />
-          <Projects />
-          <div className="h-[106px]" />
-          <Skills />
-          <div className="h-[112px]" />
-          <AboutMe />
-          <div className="h-[112px]" />
-          <Contacts />
-          <div className="h-[145px]" />
-          <Footer />
-        </div>
-      </div>
-    </>
+    <Layout>
+      <div className="h-[40px] md:h-[62px]" />
+      <Hero />
+      <div className="h-[112px]" />
+      <QuoteSection />
+      <div className="h-[74px]" />
+      <ProjectSection />
+      <div className="h-[106px]" />
+      <Skills />
+      <div className="h-[112px]" />
+      <AboutSection />
+      <div className="h-[112px]" />
+      <ContactSection />
+    </Layout>
   );
 };
 

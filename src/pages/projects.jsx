@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
-import Media from "../components/media";
-import { Header, MobileHeader } from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/Layout";
 import CompleteApps from "../components/complete-apps";
 import SmallProjects from "../components/small-projects";
 import { useTranslation } from "react-i18next";
@@ -9,54 +6,23 @@ import { useTranslation } from "react-i18next";
 export const Projects = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <div className="hidden md:block text-[#fff] bg-[#21201c]">
-        <div className="mx-[171px]">
-          <Media />
-          <Header />
-          <div className="mt-[53px]">
-            <div className="flex flex-col gap-[14px]">
-              <div className="font-semibold text-[32px]">
-                <font className="main-color">/</font>projects
-              </div>
-              <div>{t("list-of-my-projects")}</div>
-            </div>
+    <Layout>
+      <div className="mt-[53px]">
+        <div className="flex flex-col gap-[14px]">
+          <div className="font-semibold text-[32px]">
+            <font className="main-color">/</font>projects
           </div>
-          <div className="mt-[68px]" />
-          <CompleteApps />
-          <div className="mt-[81px]" />
-          <div className="flex flex-col gap-12">
-            <SmallProjects />
-          </div>
-          <div className="mt-[185px]" />
-          <Footer />
+          <div>{t("list-of-my-projects")}</div>
         </div>
       </div>
-
-      {/* For Mobile */}
-
-      <div className="md:hidden text-[#fff] bg-[#21201c]">
-        <div className="mx-[16px]">
-          <MobileHeader />
-          <div className="mt-[53px]">
-            <div className="flex flex-col gap-[14px]">
-              <div className="font-semibold text-[32px]">
-                <font className="main-color">/</font>projects
-              </div>
-              <div>{t("list-of-my-projects")}</div>
-            </div>
-          </div>
-          <div className="mt-[68px]" />
-          <CompleteApps />
-          <div className="mt-[81px]" />
-          <div className="flex flex-col gap-12">
-            <SmallProjects />
-          </div>
-          <div className="mt-[50px]" />
-          <Footer />
-        </div>
+      <div className="mt-[68px]" />
+      <CompleteApps />
+      <div className="mt-[81px]" />
+      <div className="flex flex-col gap-12">
+        <SmallProjects />
       </div>
-    </>
+      <div className="mt-[185px] md:mt-[50px]" />
+    </Layout>
   );
 };
 

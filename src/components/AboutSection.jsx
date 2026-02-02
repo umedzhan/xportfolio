@@ -2,7 +2,7 @@ import { t } from "i18next";
 import ReadMore from "./buttons/buttons";
 import { useTranslation } from "react-i18next";
 
-export const AboutMe = () => {
+export const AboutSection = () => {
   const { t } = useTranslation();
   return (
     <>

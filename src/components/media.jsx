@@ -5,16 +5,16 @@ export const Media = () => {
         <div className="w-[1px] h-[191px] bg-[#ABB2BF]" />
         <div className="flex flex-col gap-2 items-center">
           <a href="https://github.com/umedzhan" target="_blank">
-            <img src="icons/github.svg" />
+            <img src="icons/github.svg" alt="github" />
           </a>
           <a href="https://t.me/umezhon" target="_blank">
-            <img src="icons/telegram.svg" />
+            <img src="icons/telegram.svg" alt="telegram" />
           </a>
           <a
             href="https://www.linkedin.com/in/umedjon-karayev-925009320"
             target="_blank"
           >
-            <img className="mt-[-3px]" src="icons/linkedin1.svg" />
+            <img className="mt-[-3px]" src="icons/linkedin1.svg" alt="linkedin" />
           </a>
         </div>
       </div>

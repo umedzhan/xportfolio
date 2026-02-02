@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export const First = () => {
+export const Hero = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -22,14 +22,17 @@ export const First = () => {
           <img
             className="absolute right-4 bottom-[80px] z-20"
             src="icons/Dots.svg"
+            alt="dots"
           />
           <img
             className="max-w-[469px] max-h-[386px] relative z-10"
             src="images/iam.png"
+            alt="Hero image"
           />
           <img
             className="absolute left-0 top-[84px] z-0"
             src="icons/Logo.svg"
+            alt="logo"
           />
           <div className="flex items-center gap-2 border-1 ml-[31px] mr-[36px] text-[16px] p-2 font-medium">
             <div className="bg-color bg-[#f53003] w-4 h-4" />
@@ -57,14 +60,17 @@ export const First = () => {
           <img
             className="absolute right-4 bottom-[80px] z-20"
             src="icons/Dots.svg"
+            alt="dots"
           />
           <img
             className="max-w-full max-h-[386px] relative z-10"
             src="images/iam.png"
+            alt="Hero image"
           />
           <img
             className="absolute left-0 top-[84px] z-0"
             src="icons/Logo.svg"
+            alt="logo"
           />
           <div className="flex items-center gap-2 border-1 text-[16px] p-2 font-medium">
             <div className="bg-color bg-[#f53003] w-4 h-4 min-w-4 max-w-4" />
@@ -76,4 +82,4 @@ export const First = () => {
   );
 };
 
-export default First;
+export default Hero;

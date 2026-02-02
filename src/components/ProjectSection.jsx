@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Live from "./buttons/live";
 import { useTranslation } from "react-i18next";
 
-export const Projects = () => {
+export const ProjectSection = () => {
   const { t } = useTranslation();
 
   const projects = [
@@ -123,4 +123,4 @@ export const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectSection;

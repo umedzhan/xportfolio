@@ -32,7 +32,7 @@ export const Skills = () => {
           </div>
         </div>
         <div className="flex gap-[59px] justify-between">
-          <img className="ml-[32px] w-[349px]" src="images/skills.svg" />
+          <img className="ml-[32px] w-[349px]" src="images/skills.svg" alt="skills" />
           <div className="flex gap-4 mt-[31px]">
             <div>
               <BlockSkills

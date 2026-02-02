@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "/src/pages/home";
-import Projects from "/src/pages/projects";
-import AboutMe from "./src/pages/about-me";
-import Contacts from "./src/pages/contacts";
-import NotFound from "./src/pages/404";
+import Home from "./pages/home";
+import Projects from "./pages/projects";
+import AboutMe from "./pages/about-me";
+import Contacts from "./pages/contacts";
+import NotFound from "./pages/404";
 
 const Router = () => {
   return (

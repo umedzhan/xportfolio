@@ -1,65 +1,30 @@
-import { Link } from "react-router-dom";
-import { Header, MobileHeader } from "../components/header";
+import Layout from "../components/Layout";
 import { Skills2 } from "../components/skills";
-import { AboutMe, AboutMe2 } from "../components/about-me";
-import { Contacts } from "../components/contacts";
-import { Footer } from "../components/footer";
-import { Media } from "../components/media";
+import { AboutMe2 } from "../components/AboutSection";
 import { MyFunFacts } from "../components/my-fun-facts";
 import { useTranslation } from "react-i18next";
 
-export const Home = () => {
+export const AboutMePage = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <div className="hidden md:block text-[#fff] bg-[#21201c]">
-        <div className="mx-[171px]">
-          <Media />
-          <Header />
-          <div className="mt-[53px]">
-            <div className="flex flex-col gap-[14px]">
-              <div className="font-semibold text-[32px]">
-                <font className="main-color">/</font>about-me
-              </div>
-              <div>{t("who_i_am")}</div>
-            </div>
+    <Layout>
+      <div className="mt-[53px]">
+        <div className="flex flex-col gap-[14px]">
+          <div className="font-semibold text-[32px]">
+            <font className="main-color">/</font>about-me
           </div>
-          <div className="h-[62px]" />
-          <AboutMe2 />
-          <div className="h-[112px]" />
-          <Skills2 />
-          <div className="h-[83px]" />
-          <MyFunFacts />
-          <div className="h-[162px]" />
-          <Footer />
+          <div>{t("who_i_am")}</div>
         </div>
       </div>
-
-      {/* For Mobile */}
-
-      <div className="md:hidden text-[#fff] bg-[#21201c]">
-        <div className="mx-[16px]">
-          <MobileHeader />
-          <div className="mt-[53px]">
-            <div className="flex flex-col gap-[14px]">
-              <div className="font-semibold text-[32px]">
-                <font className="main-color">/</font>about-me
-              </div>
-              <div>{t("who_i_am")}</div>
-            </div>
-          </div>
-          <div className="h-[62px]" />
-          <AboutMe2 />
-          <div className="h-[112px]" />
-          <Skills2 />
-          <div className="h-[83px]" />
-          <MyFunFacts />
-          <div className="h-[50px]" />
-          <Footer />
-        </div>
-      </div>
-    </>
+      <div className="h-[62px]" />
+      <AboutMe2 />
+      <div className="h-[112px]" />
+      <Skills2 />
+      <div className="h-[83px]" />
+      <MyFunFacts />
+      <div className="h-[162px] md:h-[50px]" />
+    </Layout>
   );
 };
 
-export default Home;
+export default AboutMePage;
